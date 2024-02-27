@@ -1,3 +1,19 @@
-
+user@USERnoMacBook-Pro ~ % cd ~/Desktop/git_tutorial/git_challenge
+user@USERnoMacBook-Pro git_challenge % git init
+Initialized empty Git repository in /Users/user/Desktop/git_tutorial/git_challenge/.git/
+user@USERnoMacBook-Pro git_challenge % git add hello_world.txt
+user@USERnoMacBook-Pro git_challenge % git commit -m "hello_world.txtを追加"
+[main (root-commit) a5e1b09] hello_world.txtを追加
+ 1 file changed, 2 insertions(+)
+ create mode 100644 hello_world.txt
+user@USERnoMacBook-Pro git_challenge % git add hellow_world.txt             
+fatal: pathspec 'hellow_world.txt' did not match any files
+user@USERnoMacBook-Pro git_challenge % git add hello_world.txt 
+user@USERnoMacBook-Pro git_challenge % git commit -m "日本語訳を追記”       
+dquote> 
+dquote> "
+[main aa85f41] 日本語訳を追記”
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+user@USERnoMacBook-Pro git_challenge % git log --oneline
 aa85f41 (HEAD -> main) 日本語訳を追記”
 a5e1b09 hello_world.txtを追加
